@@ -4,21 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey Club BD</title>
+    <title>🏑Hockey Club BD🏑</title>
     <!-- daisyUI CSS and Tailwind CSS CDN script -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Manrope Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .manrope-font {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="manrope-font">
     <header>
+        <!-- Navbar -->
+        <nav class="container mx-auto my-12 h-24 bg-red-200 text-center">
+            nav
+        </nav>
 
+        <!-- Banner Slides -->
+        <div class="container mx-auto my-12">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full rounded">
+                    <img src="./img/slide-1.png" class="w-full" />
+                    <div
+                        class="absolute flex space-x-6 left-2/4 top-3/4 -translate-x-2/4 -translate-y-2/4 lg:left-7 lg:bottom-7 lg:translate-x-0 lg:-translate-y-0">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./img/slide-2.jpg" class="w-full rounded" />
+                    <div
+                        class="absolute  flex space-x-6 left-2/4 top-3/4 -translate-x-2/4 -translate-y-2/4 lg:left-7 lg:bottom-7 lg:translate-x-0 lg:-translate-y-0">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./img/slide-3.jpg" class="w-full rounded" />
+                    <div
+                        class="absolute  flex space-x-6 left-2/4 top-3/4 -translate-x-2/4 -translate-y-2/4 lg:left-7 lg:bottom-7 lg:translate-x-0 lg:-translate-y-0">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./img/slide-4.jpg" class="w-full rounded" />
+                    <div
+                        class="absolute  flex space-x-6 left-2/4 top-3/4 -translate-x-2/4 -translate-y-2/4 lg:left-7 lg:bottom-7 lg:translate-x-0 lg:-translate-y-0">
+                        <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
+        <!-- Professional Hockey Club Section -->
+        <section class="container mx-auto my-12">
+            <div class="text-center space-y-6">
+                <h2 class="text-4xl font-extrabold">Professional Hockeys Club</h2>
+                <p class="text-gray-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    <br> dolor. Purus
+                    urna in sit nullam proin.
+                </p>
+            </div>
+            <div class="my-12 grid justify-center items-center content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <!-- Radial Progress - 1 -->
+                <div class="card w-96 bg-base-100 flex flex-col justify-center items-center">
+                    <div class="radial-progress text-primary text-2xl text-[#FF4240] " style="--value:87;" role="progressbar">87%</div>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="card-title text-xl">Prayer Facility</h2>
+                        <p class="text-gray-400 w-[250px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+                <!-- Radial Progress - 2 -->
+                <div class="card w-96 bg-base-100 flex flex-col justify-center items-center">
+                    <div class="radial-progress text-primary text-2xl text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="card-title text-xl">Experienced Coach</h2>
+                        <p class="text-gray-400 w-[250px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+                <!-- Radial Progress - 3 -->
+                <div class="card w-96 bg-base-100 flex flex-col justify-center items-center">
+                    <div class="radial-progress text-primary text-2xl text-[#FFB546] " style="--value:90;" role="progressbar">90%</div>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="card-title text-xl">Senior Player</h2>     
+                        <p class="text-gray-400 w-[250px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+                <!-- Radial Progress - 4 -->
+                <div class="card w-96 bg-base-100 flex flex-col justify-center items-center">
+                    <div class="radial-progress text-primary text-2xl text-[#4C8DF1] " style="--value:80;" role="progressbar">80%</div>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="card-title text-xl">Training Ground</h2>
+                        <p class="text-gray-400 w-[250px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </main>
     <footer>
-        
+
     </footer>
 
 </body>
