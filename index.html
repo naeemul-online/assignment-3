@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🏑Hockey Club BD🏑</title>
+    <title>⛳Hockey Club BD</title>
     <!-- daisyUI CSS and Tailwind CSS CDN script -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -30,17 +30,53 @@
 <body class="manrope-font">
     <header>
         <!-- Navbar -->
-        <nav class="container mx-auto my-12 h-24 bg-red-200 text-center">
-            nav
+        <nav class="container mx-auto lg:my-4  text-center p-4">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost lg:text-4xl text-2xl font-extrabold">Hockey<span
+                            class="text-[#FF4240]">’</span> s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-[#FF4240]">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="mr-6 hidden lg:block"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <button class="btn bg-[#FF4240] border-0 font-bold text-white lg:text-xl text-[18px]">Get
+                        Ticket</button>
+                </div>
+            </div>
         </nav>
 
         <!-- Banner Slides -->
-        <div class="container mx-auto my-12 p-4">
-            <div class="carousel w-full h-[550px] z-10">
+        <div class="container mx-auto mt-4 mb-12 p-4">
+            <div class="carousel w-full lg:h-[550px] h-auto">
                 <div id="slide1" class="carousel-item relative w-full rounded">
                     <img src="./img/slide-1.png" class="w-full object-cover object-center" />
                     <div
-                        class="absolute flex space-x-6 lg:left-10 lg:bottom-10 lg:-translate-x-0 left-2/4 bottom-10 -translate-x-2/4 ">
+                        class="absolute flex space-x-6 lg:left-10 lg:-translate-x-0 left-2/4 lg:bottom-10 bottom-4 -translate-x-2/4 ">
                         <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
                     </div>
@@ -48,7 +84,7 @@
                 <div id="slide2" class="carousel-item relative w-full">
                     <img src="./img/slide-2.jpg" class="w-full object-cover object-center" />
                     <div
-                        class="absolute flex space-x-6 lg:left-10 lg:bottom-10 lg:-translate-x-0 left-2/4 bottom-10 -translate-x-2/4 ">
+                        class="absolute flex space-x-6 lg:left-10 lg:bottom-10 bottom-4 lg:-translate-x-0 left-2/4 -translate-x-2/4 ">
                         <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
                     </div>
@@ -56,7 +92,7 @@
                 <div id="slide3" class="carousel-item relative w-full">
                     <img src="./img/slide-3.jpg" class="w-full object-cover object-center" />
                     <div
-                        class="absolute flex space-x-6 lg:left-10 lg:bottom-10 lg:-translate-x-0 left-2/4 bottom-10 -translate-x-2/4 ">
+                        class="absolute flex space-x-6 lg:left-10 lg:bottom-10 bottom-4 lg:-translate-x-0 left-2/4 -translate-x-2/4 ">
                         <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
                     </div>
@@ -64,25 +100,26 @@
                 <div id="slide4" class="carousel-item relative w-full">
                     <img src="./img/slide-4.jpg" class="w-full object-cover object-center" />
                     <div
-                        class="absolute flex space-x-6 lg:left-10 lg:bottom-10 lg:-translate-x-0 left-2/4 bottom-10 -translate-x-2/4 ">
+                        class="absolute flex space-x-6 lg:left-10 lg:bottom-10 bottom-4 lg:-translate-x-0 left-2/4 -translate-x-2/4 ">
                         <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
                     </div>
                 </div>
                 <!-- Banner badge -->
-                <div
-                    class="bg-black text-white p-4  h-40 lg:w-[512px] w-[335px] rounded lg:absolute lg:bottom-10 lg:right-20">
+                <!--  <div
+                    class="bg-black text-white p-4  h-40 w-[512px] rounded absolute lg:right-10 lg:bottom-10 lg:block md:hidden hidden">
                     <h2 class="text-2xl lg:text-2xl font-extrabold mb-4">Meet all the heroes from the field</h2>
                     <p class="text-[14px] font-medium text-gray-400">Dit amet consectetur. Condimentum dignissim
                         adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-                </div>
+                </div> -->
             </div>
 
-            <div class="bg-black text-white p-4  h-40 lg:w-[512px] w-full rounded lg:hidden">
-                <h2 class="text-2xl lg:text-2xl font-extrabold mb-4">Meet all the heroes from the field</h2>
-                <p class="text-[14px] font-medium text-gray-400">Dit amet consectetur. Condimentum dignissim adipiscing
-                    aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            <div
+                class="bg-black text-white mt-6 p-4 h-40 lg:w-[512px] w-full rounded mx-auto xl:-translate-y-56 xl:translate-x-[70%]  lg:-translate-y-52 lg:translate-x-52 md:block block">
+                <h2 class="text-lg lg:text-2xl font-extrabold mb-4">Meet all the heroes from the field</h2>
+                <p class="text-[14px] font-medium text-gray-400">Are you interested in historical figures, fictional characters, real-life heroes, or heroes from specific industries like sports, science, or entertainment? </p>
             </div>
+
 
         </div>
 
@@ -95,9 +132,7 @@
 
             <div class="text-center space-y-6 p-4">
                 <h2 class="text-4xl font-extrabold">Professional Hockeys Club</h2>
-                <p class="text-gray-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
-                    <br> dolor. Purus
-                    urna in sit nullam proin.
+                <p class="text-gray-400">Hockey club BD is a powerhouse in the world of professional hockey, renowned for its unwavering commitment to  <br>excellence both on and off the ice. .
                 </p>
             </div>
             <hr class="container mx-auto my-12 border-dashed border-1 border-gray-400">
@@ -154,9 +189,7 @@
         <section class="container mx-auto my-12 p-4">
             <div class="text-center space-y-6 p-4">
                 <h2 class="text-4xl font-extrabold">Program Sections</h2>
-                <p class="text-gray-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
-                    <br> dolor. Purus
-                    urna in sit nullam proin.
+                <p class="text-gray-400">Elevate your brand with exposure, hospitality,and dynamic networking opportunities. <br> Unleashing potential through specialized programs for athletes and enthusiasts.
                 </p>
             </div>
             <hr class="container mx-auto my-12 border-dashed border-1 border-gray-400">
@@ -182,7 +215,7 @@
                     class="h-[338px] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./img/3.png)] bg-cover bg-center rounded-2xl">
                     <div class="ml-8">
                         <div class="card-body text-white space-y-7">
-                            <h2 class="card-title text-3xl font-extrabold">Junior Program</h2>
+                            <h2 class="card-title text-3xl font-extrabold">Teenager Program</h2>
                             <p class="font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. <br> Elit
                                 elit
                                 enim sagittis turpis in magna. Id et sed <br> euismod natoque amet nunc morbi nulla.
@@ -198,7 +231,7 @@
                     class="h-[450px] bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./img/4.png)] bg-cover bg-center rounded-2xl lg:col-span-2">
                     <div class="ml-8 mt-28 lg:mt-32">
                         <div class="card-body text-white space-y-7 p-4">
-                            <h2 class="card-title text-3xl font-extrabold">Junior Program</h2>
+                            <h2 class="card-title text-3xl font-extrabold">Professional Program</h2>
                             <p class="font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. <br> Elit
                                 elit
                                 enim sagittis turpis in magna. Id et sed <br> euismod natoque amet nunc morbi nulla.
@@ -429,12 +462,13 @@
                             Our Equipment
                         </div>
                         <div class="collapse-content">
-                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in
+                                magna.</p>
                         </div>
                     </div>
 
 
-                    <hr class="mx-auto  border-1 border-[#131318] opacity-10 p-4">  
+                    <hr class="mx-auto  border-1 border-[#131318] opacity-10 p-4">
 
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
@@ -442,47 +476,52 @@
                             Hockey Training
                         </div>
                         <div class="collapse-content">
-                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in
+                                magna.</p>
                         </div>
                     </div>
-                    <hr class="mx-auto  border-1 border-[#131318] opacity-10 p-4">  
+                    <hr class="mx-auto  border-1 border-[#131318] opacity-10 p-4">
                     <div class="collapse collapse-plus ">
                         <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium">
                             Private Lessons
                         </div>
                         <div class="collapse-content">
-                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in
+                                magna.</p>
                         </div>
                     </div>
-                    <hr class="mx-auto  border-1 border-[#131318] opacity-10 p-4">  
+                    <hr class="mx-auto  border-1 border-[#131318] opacity-10 p-4">
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium">
                             Ski Touring
                         </div>
                         <div class="collapse-content">
-                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in
+                                magna.</p>
                         </div>
                     </div>
-                    <hr class="mx-auto  border-1 border-[#131318] opacity-10 p-4">  
+                    <hr class="mx-auto  border-1 border-[#131318] opacity-10 p-4">
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium">
                             Booking
                         </div>
                         <div class="collapse-content">
-                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in
+                                magna.</p>
                         </div>
                     </div>
-                    <hr class="mx-auto  border-1 border-[#131318] opacity-10 p-4">  
+                    <hr class="mx-auto  border-1 border-[#131318] opacity-10 p-4">
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium">
                             Pricings
                         </div>
                         <div class="collapse-content">
-                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in
+                                magna.</p>
                         </div>
                     </div>
                 </div>
